@@ -3,9 +3,13 @@
 html{
     font-family: sans-serif;
 }
-
 h1, h2, h3, h4, h5, h6{
     font-family: "Oxygen";
+}
+.clearfix:after, .row:after{
+    content: ' ';
+    display: block;
+    clear: both;
 }
 
 .button{
@@ -137,4 +141,75 @@ h1, h2, h3, h4, h5, h6{
     font-size: 1.1em;
     text-decoration: none;
     color: white;
+}
+
+@media screen and (min-width: 48.75em){
+    
+    .top-header-logo{
+        float: left;
+    }
+    
+    .top-nav{
+        background: transparent;
+        float: right;
+        margin-top: 25px;
+    }
+
+    .top-nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    .top-nav li{
+        display: inline-block;
+    }
+    .top-nav a{
+        color: #713a84;
+    }
+    .top-nav a:hover{
+        background: #e7d9fc;
+    }
+
+    .top-content{
+        background: #521a66;
+        color: white;
+    }
+    .top-content-title, .top-content-subtitle{
+        background: #521a66;
+        color: white;
+    }
+
+    .col-1_4{
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+
+    .main-content-article .button{
+        float: right;
+    }
+}
+
+@media screen and (min-width: 62.5em){ /*   1000px/16   */
+    .top-content{
+/*        
+        background-color: #521a66;
+        background-image: url(../images/bg_topo_1198x670.jpg);
+*/
+        background-image: url("../images/bg_topo_1198x670.jpg");
+        height: 30em;
+        padding-top: 15em;
+    }
+}
+
+@media screen and (min-width: 64em){
+    .top-content{
+        background-image: url("../images/bg_topo_1600x1374.jpg");
+        height: 30em;
+        padding-top: 15em;
+    }
+
+    .col-1_4{
+        width: 23%;
+        margin: 1%;
+    }
 }
